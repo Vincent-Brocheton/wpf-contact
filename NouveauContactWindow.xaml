@@ -1,0 +1,41 @@
+﻿<Window x:Class="WpfApp1.NouveauContactWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="NouveauContactWindow" Height="450" Width="800">
+    <StackPanel>
+        <TextBlock Text="Nom : "
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Center"
+                   FontSize="20"/>
+        <TextBox x:Name="tbName" 
+                 FontSize="20"
+                 Margin="15"/>
+        <TextBlock Text="Prénom : "
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Center"
+                   FontSize="20"/>
+        <TextBox x:Name="tbFirstName"
+                 FontSize="20"
+                 Margin="15"/>
+        <TextBlock Text="Téléphone : "
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Center"
+                   FontSize="20"/>
+        <TextBox x:Name="tbPhone"
+                 FontSize="20"
+                 Margin="15"/>
+        <TextBlock Text="Date de naissance : "
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Center"
+                   FontSize="20"/>
+        <DatePicker x:Name="tbBirthDate"
+                 FontSize="20"
+                 Margin="15"/>
+        <Button FontSize="20" Margin="15,0,15,0" x:Name="btnAjouter" Click="btnAjouter_Click" Content="Ajouter" />
+        <Button FontSize="20" Margin="15,5,15,0" x:Name="btnExit" Content="Quitter" Click="btnExit_Click"/>
+    </StackPanel>
+</Window>
